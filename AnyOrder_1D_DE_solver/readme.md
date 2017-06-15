@@ -3,6 +3,7 @@ Any given order 1D equation can be solver for user specific time domain and init
 
 ## Define equation
 Equation has to satisfy critearia of declaration explained in example of single mass damped pendulum.
+
     def eq(derivative,t):
         return 1 / J * (M0*np.sin(b*t ) - c * derivative[1] - k * derivative[0])
     
