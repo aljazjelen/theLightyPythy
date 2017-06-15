@@ -8,20 +8,20 @@ Equation has to satisfy critearia of declaration explained in example of single 
         return 1 / J * (M0*np.sin(b*t ) - c * derivative[1] - k * derivative[0])
     
 ## Define case
-case = ODEsolver(eq)
+    case = ODEsolver(eq)
 
 ## Define time domain
-case.setTimeDomain(0,10,0.0001)
+    case.setTimeDomain(0,10,0.0001)
 
 ## Define initial conditions
-initData = [0.0, 0.0]
-case.setInitalConditions(initData)
+    initData = [0.0, 0.0]
+    case.setInitalConditions(initData)
 
 ## Run solver
-case.derive()
+    case.derive()
 
 ## Access solution
-solution = case.solution
+    solution = case.solution
 
 ## Draw results in given time domain
-case.izris()
+    case.izris()
